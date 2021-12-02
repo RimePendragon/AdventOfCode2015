@@ -1,65 +1,38 @@
-import string
+# solution from https://blog.jverkamp.com/2015/12/11/advent-of-code-day-11/
 import re
 
-abc = list(string.ascii_lowercase)
-mandatory = []
-forbidden = ["i", "o", "l"]
-double_chars = []
 
-for x in range(len(abc)):
-    for y in range(len(abc)):
-        for z in range(len(abc)):
-            if x < y < z and z - x < 3:
-                mandatory.append(abc[x] + abc[y] + abc[z])
+def is_valid(password):
+    numeric = list(map(ord, password))
 
-for x in range(len(abc)):
-    double_chars.append(abc[x] + abc[x])
-
-
-def increment_character(password, position):
-    character = password[position:position + 1]
-    char_index = abc.index(character) + 1
-    if char_index >= len(abc):
-        char_index = 0
-    return password[:position] + abc[char_index] + password[position + 1:]
+    return (
+        # Include an increasing subsequence
+        any(numeric[i] + 2 == numeric[i + 1] + 1 == numeric[i + 2] for i in range(len(password) - 2))
+        # May not contain i, o, or l
+        and not any(c in password for c in 'iol')
+        # Must have at least two different pairs
+        and len(set(re.findall(r'(.)\1', password))) >= 2
+    )
 
 
-def increment_password(password):
-    length = len(password)
-    for position in range(length - 1, -1, -1):
-        password = increment_character(password, position)
-        character = password[position:position + 1]
-        if abc.index(character) > 0:
+def increment(password):
+    numeric = list(map(ord, password))
+    index = -1
+    while True:
+        numeric[index] += 1
+        if numeric[index] <= ord('z'):
+            break
+        else:
+            numeric[index] = ord('a')
+            index -= 1
+    return ''.join(map(chr, numeric))
+
+
+def next_valid(password):
+    while True:
+        password = increment(password)
+        if is_valid(password):
             return password
 
 
-def check_password(password):
-    good = False
-    for check in double_chars:
-        x = re.findall(check, password)
-        if len(x) > 1:
-            good = True
-    if good is False:
-        return False
-    for check in forbidden:
-        x = re.findall(check, password)
-        if len(x) > 0:
-            return False
-    good = False
-    for chars in mandatory:
-        x = re.findall(chars, password)
-        if len(x) > 0:
-            good = True
-    return good
-
-
-def get_new_password(password):
-    while True:
-        new_password = increment_password(password)
-        if check_password(new_password) is True:
-            return new_password
-        else:
-            password = new_password
-
-
-print(get_new_password("abcdefgh"))
+print(next_valid("vzbxxyzz"))
