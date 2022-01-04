@@ -1,5 +1,7 @@
+import os
+import sys
 filename = "input.txt"
-data = open(filename, "r").read()
+data = open(os.path.join(sys.path[0], filename ), "r").read()
 
 floor = 0
 index = 0

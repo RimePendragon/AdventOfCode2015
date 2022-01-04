@@ -1,8 +1,10 @@
 import string
 import re
+import os
+import sys
 
 filename = "input.txt"
-data = open(filename, "r")
+data = open(os.path.join(sys.path[0], filename ), "r")
 
 alphabet = list(string.ascii_lowercase)
 vowels = ["a", "e", "i", "o", "u"]

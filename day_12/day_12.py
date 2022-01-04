@@ -1,6 +1,8 @@
 import json
-
-data = json.load(open("input.txt", "r"))
+import os
+import sys
+filename = "input.txt"
+data = json.load(open(os.path.join(sys.path[0], filename ), "r"))
 
 numbers = []
 

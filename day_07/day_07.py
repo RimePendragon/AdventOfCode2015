@@ -1,9 +1,11 @@
 # solution from https://blog.jverkamp.com/2015/12/07/advent-of-code-day-7/
 import operator
 import re
+import os
+import sys
 
 filename = "input2.txt"
-data = open(filename, "r")
+data = open(os.path.join(sys.path[0], filename ), "r")
 
 mono_operators = {
     'NOT': lambda x: ~x & 0xFFFF,

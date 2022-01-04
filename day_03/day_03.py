@@ -1,5 +1,7 @@
+import os
+import sys
 filename = "input.txt"
-data = open(filename, "r").read()
+data = open(os.path.join(sys.path[0], filename ), "r")
 useRobot = True
 
 locationSanta = [0, 0]  # n-z e-w coordinates

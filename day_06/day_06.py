@@ -1,5 +1,7 @@
+import os
+import sys
 filename = "input.txt"
-data = open(filename, "r")
+data = open(os.path.join(sys.path[0], filename ), "r")
 
 lights = [[{"status": 0, "brightness": 0} for columns in range(1000)] for rows in range(1000)]
 

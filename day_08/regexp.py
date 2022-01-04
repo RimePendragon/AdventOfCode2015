@@ -1,7 +1,9 @@
 import re
+import os
+import sys
 
 filename = "input.txt"
-data = open(filename, "r")
+data = open(os.path.join(sys.path[0], filename ), "r")
 
 total_string_code = 0
 total_char_in_memory = 0

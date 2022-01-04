@@ -1,8 +1,10 @@
 import networkx as nx
 import matplotlib.pyplot as plt
+import os
+import sys
 
 filename = "input.txt"
-data = open(filename, "r")
+data = open(os.path.join(sys.path[0], filename ), "r")
 
 G = nx.Graph()
 

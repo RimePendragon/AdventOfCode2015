@@ -1,5 +1,7 @@
+import os
+import sys
 filename = "input.txt"
-data = open(filename, "r")
+data = open(os.path.join(sys.path[0], filename ), "r")
 
 totalPaper = 0
 totalRibbon = 0

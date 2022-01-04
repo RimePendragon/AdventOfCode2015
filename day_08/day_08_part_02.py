@@ -1,7 +1,9 @@
 import re
+import os
+import sys
 
 filename = "input.txt"
-data = open(filename, "r")
+data = open(os.path.join(sys.path[0], filename ), "r")
 
 pad = 60
 total_length_string = 0

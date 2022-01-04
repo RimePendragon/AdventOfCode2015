@@ -1,7 +1,9 @@
 import re
+import os
+import sys
 
 filename = "example.txt"
-data = open(filename, "r")
+data = open(os.path.join(sys.path[0], filename ), "r")
 
 total_length_string = 0
 total_length_in_memory = 0
