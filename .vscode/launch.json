@@ -1,0 +1,113 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Day 01",
+            "type": "python",
+            "request": "launch",
+            "program": "day_01/day_01.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
+            "name": "Day 02",
+            "type": "python",
+            "request": "launch",
+            "program": "day_02/day_02.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
+            "name": "Day 03",
+            "type": "python",
+            "request": "launch",
+            "program": "day_03/day_03.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
+            "name": "Day 04",
+            "type": "python",
+            "request": "launch",
+            "program": "day_04/day_04.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
+            "name": "Day 05",
+            "type": "python",
+            "request": "launch",
+            "program": "day_05/day_05.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
+            "name": "Day 06",
+            "type": "python",
+            "request": "launch",
+            "program": "day_06/day_06.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
+            "name": "Day 07",
+            "type": "python",
+            "request": "launch",
+            "program": "day_07/day_07.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
+            "name": "Day 08_part_01",
+            "type": "python",
+            "request": "launch",
+            "program": "day_08/day_08_part_01.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
+            "name": "Day 08_part_02",
+            "type": "python",
+            "request": "launch",
+            "program": "day_08/day_08_part_02.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
+            "name": "Day 09",
+            "type": "python",
+            "request": "launch",
+            "program": "day_09/day_09.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
+            "name": "Day 10",
+            "type": "python",
+            "request": "launch",
+            "program": "day_10/day_10.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
+            "name": "Day 11",
+            "type": "python",
+            "request": "launch",
+            "program": "day_11/day_11.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
+            "name": "Day 12",
+            "type": "python",
+            "request": "launch",
+            "program": "day_12/day_12.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        }
+    ]
+}
