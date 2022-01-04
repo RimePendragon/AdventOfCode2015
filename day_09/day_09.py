@@ -18,7 +18,7 @@ for line in data:
     G.add_edge(point1, point2, weight=int(distance))
 
 nx.draw(G, with_labels=True, font_weight='bold')
-plt.savefig("graph.png")
+plt.savefig(os.path.join(sys.path[0], "graph.png" ))
 
 cities = G.nodes()
 
