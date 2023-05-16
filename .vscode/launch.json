@@ -6,6 +6,8 @@
     "configurations": [
 
 
+
+
         
         {
             "name": "Day 01",
@@ -132,6 +134,22 @@
             "type": "python",
             "request": "launch",
             "program": "day_15/day_15.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
+            "name": "Day 16",
+            "type": "python",
+            "request": "launch",
+            "program": "day_16/day_16.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
+            "name": "Day 17",
+            "type": "python",
+            "request": "launch",
+            "program": "day_17/day_17.py",
             "internalConsoleOptions": "openOnSessionStart",
             "redirectOutput": true
         }
