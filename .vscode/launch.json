@@ -126,6 +126,14 @@
             "program": "day_14/day_14.py",
             "internalConsoleOptions": "openOnSessionStart",
             "redirectOutput": true
+        },
+        {
+            "name": "Day 15",
+            "type": "python",
+            "request": "launch",
+            "program": "day_15/day_15.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
         }
     ]
 }
