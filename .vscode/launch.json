@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         
         {
             "name": "Day 01",
@@ -106,6 +107,14 @@
             "type": "python",
             "request": "launch",
             "program": "day_12/day_12.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
+            "name": "Day 13",
+            "type": "python",
+            "request": "launch",
+            "program": "day_13/day_13.py",
             "internalConsoleOptions": "openOnSessionStart",
             "redirectOutput": true
         }
