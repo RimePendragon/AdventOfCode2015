@@ -8,6 +8,7 @@
 
 
 
+
         
         {
             "name": "Day 01",
@@ -150,6 +151,14 @@
             "type": "python",
             "request": "launch",
             "program": "day_17/day_17.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
+            "name": "Day 18",
+            "type": "python",
+            "request": "launch",
+            "program": "day_18/day_18.py",
             "internalConsoleOptions": "openOnSessionStart",
             "redirectOutput": true
         }
