@@ -25,8 +25,8 @@ for line in data:
 
 grid.turnCornersOn()
 
-# print('##############  START ####################')
-# grid.print()
+print('##############  START ####################')
+grid.print()
 
 steps = 100
 
