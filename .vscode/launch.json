@@ -195,6 +195,14 @@
             "program": "day_21/day_21.py",
             "internalConsoleOptions": "openOnSessionStart",
             "redirectOutput": true
+        },
+        {
+            "name": "Day 23",
+            "type": "python",
+            "request": "launch",
+            "program": "day_23/day_23.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
         }
     ]
 }
