@@ -197,10 +197,26 @@
             "redirectOutput": true
         },
         {
+            "name": "Day 22",
+            "type": "python",
+            "request": "launch",
+            "program": "day_22/day_22.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
             "name": "Day 23",
             "type": "python",
             "request": "launch",
             "program": "day_23/day_23.py",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true
+        },
+        {
+            "name": "Day 24",
+            "type": "python",
+            "request": "launch",
+            "program": "day_24/day_24.py",
             "internalConsoleOptions": "openOnSessionStart",
             "redirectOutput": true
         }
