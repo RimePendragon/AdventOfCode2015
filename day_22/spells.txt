@@ -1,0 +1,6 @@
+#name;cost;duration;damage;heal;armor;mana
+Magic Missile;53;0;4;0;0;0
+Drain;73;0;2;2;0;0
+Shield;113;6;0;0;7;0
+Poison;173;6;3;0;0;0
+Recharge;229;5;0;0;0;101
