@@ -98,18 +98,20 @@ class Player():
                         if spell not in self.activeSpells:
                             if spell.duration==0:
                                 if spell.damage>0:
-                                    opponent.damage-=spell.damage
+                                    opponent.hitpoints-=spell.damage-opponent.armor
                                     print(f'Player casts {spell.name}, dealing {spell.damage} damage;')
+                                    break
                                 if spell.heal>0:
                                     self.hitpoints+=spell.heal
                                     print(f'Player casts {spell.name}, healing {spell.heal} hitpoints;')
+                                    break
                             if spell.armor>0:
                                     self.armor+=spell.armor 
                                     print(f'Player casts {spell.name}, increasing armor by {spell.armor}.')                    
                             else:
                                 self.castSpell(spell)
                             break                        
-                opponent.hitpoints-=self.damage-opponent.armor
+                #opponent.hitpoints-=self.damage-opponent.armor
                 #print(f'The {self.name} deals {self.damage}-{opponent.armor} = {self.damage-opponent.armor} damage; the {opponent.name} goes down to {opponent.hitpoints} hit points.')
                 if opponent.hitpoints<=0: 
                     finished=True

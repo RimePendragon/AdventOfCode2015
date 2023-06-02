@@ -36,5 +36,5 @@ for spell in spells:
 result = Result(player.battle(boss), int(player.mana))
 
         
-boss = Player("Boss", 51, 9, 0, 0)
-player = Player("Player", 100, 0, 0, 500)
+#boss = Player("Boss", 51, 9, 0, 0)
+#player = Player("Player", 100, 0, 0, 500)
